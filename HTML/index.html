@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" manifest="cache.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inde.css" type="text/css" media="screen">
+    <title>Document</title>
+</head>
+<body 
+    onload="iniciarPagina()"
+    onunload="salirPagina()"
+    onfocus="activarPagina()"
+    onblur="desactivarPagina()"
+    class="principal"
+    id="pagina"
+    style="background-color: white;"
+    title="Página principal">
+    <img src="https://edteam-media.s3.amazonaws.com/blogs/original/f4a2ed3d-7b90-4779-b457-5855fe16284b.png"
+    alt="No carga la imagen" width="300" height="200">
+    <form action="/procesar-datos" method="post" target="_blank" autocomplete="on">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre..." name="nombre_usuario">
+    <input type="text" placeholder="Escribe tu nombre">
+    <input type="email" placeholder="Escribe tu correo">
+    <input type="password" placeholder="Escribe tu contraseña">
+    <input type="number" placeholder="Escribe tu edad">
+    <input type="date">
+    <input type="checkbox"> Acepto los términos
+    <input type="radio" name="genero"> Hombre
+    <input type="radio" name="genero"> Mujer
+    <label for="recomendar">Dar recoomendaciones:</label>
+    <textarea type="text" id="recomendar" rows="5" cols="50" placeholder="Escribe aqui..."
+    maxlength="200" name="recomendaciones"></textarea>
+    <button type="submit">Enviar</button>
+    <button type="button" disabled>Desactivado</button>
+    </form>
+    <p>Esto es parte de mi trabajo, y para esto se usa<br>"br".</p>
+    <hr>
+    <video src="https://youtu.be/JKYFxKA4B68" controls
+    width="600" height="400"
+    poster="portada.jpg" autoplay></video>
+    <p>Para mostrar un título usamos <code>&lt;h1&gt;</code></p>
+    <select multiple size="3">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Python</option>
+    </select>
+    <a href="https://sites.google.com/view/sqlmysql/p%C3%A1gina-principal" target="_blank">Aprende SQL aqui</a>
+</body>
+</html>
