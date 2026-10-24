@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <h1>Guía básica de HTML</h1>
+    <p>HTML sirve para <strong>organizar el contenido</strong> de una página web.</p>
+    <p>En cada sección encontrarás <strong>etiquetas</strong> y <strong>atributos</strong> importantes con <em>ejemplos sencillos</em>.</p>
+    <hr>
+    <nav>
+        <a href="#estructura">estructura</a>
+        <a href="#texto">texto</a>
+        <a href="#listas">listas</a>
+        <a href="#enlaces-imagenes">enlaces-imagenes</a>
+        <a href="#tablas">tablas</a>
+        <a href="#formularios">formularios</a>
+        <a href="#secciones">secciones</a>
+        <a href="#multimedia">multimedia</a>
+        <a href="#comentarios">comentarios</a>
+    </nav>
+    <hr>
+    <section id="estructura">
+        <h2>1. Estructura</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: indica que se usa <strong>HTML moderno</strong>.</li>
+            <li><code>&lt;html&gt;</code>: contiene <strong>toda la página</strong>.</li>
+            <li><code>&lt;head&gt;</code>: contiene <strong>información</strong> de la página.</li>
+            <li><code>&lt;title&gt;</code>: muestra el <strong>título</strong> en la pestaña.</li>
+            <li><code>&lt;body&gt;</code>: contiene el <strong>contenido visible</strong>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>lang</code>: indica el <strong>idioma</strong>. Ejemplo: <code>&lt;html lang="es"&gt;</code>.</li>
+            <li><code>charset</code>: permite mostrar correctamente los <strong>caracteres</strong>. Ejemplo: <code>&lt;meta charset="UTF-8"&gt;</code>.</li>
+            <li><code>name</code> y <code>content</code>: describen <strong>información</strong> de la página. Ejemplo: <code>&lt;meta name="description" content="Mi página"&gt;</code>.</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="texto">
+        <h2>2. Títulos y texto</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: crean <strong>títulos</strong> de diferentes <em>niveles</em>. Ejemplo: <code>&lt;h1&gt;Título principal&lt;/h1&gt;</code>.</li>
+            <li><code>&lt;p&gt;</code>: crea un <strong>párrafo</strong>. Ejemplo: <code>&lt;p&gt;Hola mundo&lt;/p&gt;</code>.</li>
+            <li><code>&lt;br&gt;</code>: hace un <strong>salto de línea</strong>. Ejemplo: <code>Hola&lt;br&gt;Mundo</code>.</li>
+            <li><code>&lt;hr&gt;</code>: <strong>separa temas</strong>. Ejemplo: <code>&lt;p&gt;Tema uno&lt;/p&gt;&lt;hr&gt;</code>.</li>
+            <li><code>&lt;strong&gt;</code>: indica <strong>importancia</strong>. Ejemplo: <code>&lt;strong&gt;Importante&lt;/strong&gt;</code>.</li>
+            <li><code>&lt;em&gt;</code>: da <em>énfasis</em>. Ejemplo: <code>&lt;em&gt;Muy útil&lt;/em&gt;</code>.</li>
+            <li><code>&lt;mark&gt;</code>: <strong>resalta</strong> texto. Ejemplo: <code>&lt;mark&gt;Revisar&lt;/mark&gt;</code>.</li>
+            <li><code>&lt;sub&gt;</code> y <code>&lt;sup&gt;</code>: muestran <strong>subíndice</strong> y <strong>superíndice</strong>. Ejemplo: <code>H&lt;sub&gt;2&lt;/sub&gt;O</code>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>id</code>: <strong>identifica</strong> un elemento. Ejemplo: <code>&lt;p id="aviso"&gt;Hola&lt;/p&gt;</code>.</li>
+            <li><code>class</code>: <strong>agrupa</strong> elementos para darles <em>estilo</em>. Ejemplo: <code>&lt;p class="destacado"&gt;Hola&lt;/p&gt;</code>.</li>
+            <li><code>title</code>: añade <strong>información adicional</strong>. Ejemplo: <code>&lt;p title="Un mensaje"&gt;Pasa el cursor&lt;/p&gt;</code>.</li>
+        </ul>
+        <h3>Cómo se conectan</h3>
+        <p>Las etiquetas de texto se colocan dentro de <code>&lt;body&gt;</code> y pueden <strong>combinarse</strong> dentro de un párrafo.</p>
+    </section>
+    <hr>
+    <section id="listas">
+        <h2>3. Listas</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;ul&gt;</code>: crea una lista con <strong>viñetas</strong>.</li>
+            <li><code>&lt;ol&gt;</code>: crea una lista <strong>numerada</strong>.</li>
+            <li><code>&lt;li&gt;</code>: representa un <strong>elemento</strong> de la lista.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>start</code>: elige el <strong>número inicial</strong> de una lista <em>ordenada</em>. Ejemplo: <code>&lt;ol start="3"&gt;</code>.</li>
+            <li><code>type</code>: cambia el <strong>estilo de numeración</strong> de <code>&lt;ol&gt;</code>. Ejemplo: <code>&lt;ol type="A"&gt;</code>.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p><code>&lt;li&gt;</code> va <strong>dentro</strong> de <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.</p>
+    </section>
+    <hr>
+    <section id="enlaces-imagenes">
+        <h2>4. Enlaces e imágenes</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;a&gt;</code>: crea un <strong>enlace</strong>. Ejemplo: <code>&lt;a href="index.html"&gt;Inicio&lt;/a&gt;</code>.</li>
+            <li><code>&lt;img&gt;</code>: muestra una <strong>imagen</strong>. Ejemplo: <code>&lt;img src="imagenes/foto.jpg" alt="Una foto"&gt;</code>.</li>
+            <li><code>&lt;figure&gt;</code>: <strong>agrupa</strong> una imagen u otro contenido.</li>
+            <li><code>&lt;figcaption&gt;</code>: añade una <strong>descripción</strong> a la figura.</li>
+        </ul>
+        <figure>
+            <img src="imagenes/foto4.jpg" alt="programacion_html">
+            <figcaption>Codigo html</figcaption>
+        </figure>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>href</code>: indica el <strong>destino</strong> del enlace. Ejemplo: <code>href="index.html"</code>.</li>
+            <li><code>src</code>: indica el <strong>archivo</strong> de la imagen. Ejemplo: <code>src="imagenes/foto.jpg"</code>.</li>
+            <li><code>alt</code>: <strong>describe</strong> la imagen. Ejemplo: <code>alt="Un gato sentado"</code>.</li>
+            <li><code>target</code>: indica <strong>dónde se abre</strong> el enlace. Ejemplo: <code>target="_blank"</code>.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p><code>&lt;a&gt;</code> contiene el <strong>texto del enlace</strong>. <code>&lt;figure&gt;</code> puede contener <code>&lt;img&gt;</code> y <code>&lt;figcaption&gt;</code>.</p>
+    </section>
+    <hr>
+    <section id="tablas">
+        <h2>5. Tablas</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;table&gt;</code>: crea la <strong>tabla</strong>.</li>
+            <li><code>&lt;tr&gt;</code>: crea una <strong>fila</strong>.</li>
+            <li><code>&lt;th&gt;</code>: crea una celda de <strong>encabezado</strong>.</li>
+            <li><code>&lt;td&gt;</code>: crea una celda de <strong>datos</strong>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>colspan</code>: une <strong>columnas</strong>. Ejemplo: <code>&lt;td colspan="2"&gt;</code>.</li>
+            <li><code>rowspan</code>: une <strong>filas</strong>. Ejemplo: <code>&lt;td rowspan="2"&gt;</code>.</li>
+            <li><code>scope</code>: identifica el <strong>tipo de encabezado</strong>. Ejemplo: <code>&lt;th scope="col"&gt;Nombre&lt;/th&gt;</code>.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p><code>&lt;table&gt;</code> contiene <strong>filas</strong> <code>&lt;tr&gt;</code>, y cada fila contiene <strong>celdas</strong> <code>&lt;th&gt;</code> o <code>&lt;td&gt;</code>.</p>
+    </section>
+    <hr>
+    <section id="formularios">
+        <h2>6. Formularios</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;form&gt;</code>: agrupa <strong>campos</strong> para enviar datos.</li>
+            <li><code>&lt;label&gt;</code>: indica qué <strong>dato</strong> se pide.</li>
+            <li><code>&lt;input&gt;</code>: crea un <strong>campo de entrada</strong>.</li>
+            <li><code>&lt;textarea&gt;</code>: permite escribir <strong>varias líneas</strong>.</li>
+            <li><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code>: crean una <strong>lista desplegable</strong> y sus <strong>opciones</strong>.</li>
+            <li><code>&lt;button&gt;</code>: crea un <strong>botón</strong>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>type</code>: define el <strong>tipo de campo</strong>. Ejemplo: <code>type="email"</code>.</li>
+            <li><code>name</code>: <strong>nombre</strong> del dato. Ejemplo: <code>name="correo"</code>.</li>
+            <li><code>placeholder</code>: muestra una <strong>sugerencia</strong>. Ejemplo: <code>placeholder="Escribe tu nombre"</code>.</li>
+            <li><code>required</code>: hace <strong>obligatorio</strong> el campo.</li>
+            <li><code>for</code>: <strong>conecta</strong> un <code>&lt;label&gt;</code> con el <code>id</code> de un campo.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p>Los campos van dentro de <code>&lt;form&gt;</code>. El valor de <code>for</code> <em>debe coincidir</em> con el <code>id</code> del campo.</p>
+    </section>
+    <hr>
+    <section id="secciones">
+        <h2>7. Secciones de una página</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;header&gt;</code>: <strong>encabezado</strong> de la página o sección.</li>
+            <li><code>&lt;nav&gt;</code>: contiene enlaces de <strong>navegación</strong>.</li>
+            <li><code>&lt;main&gt;</code>: contiene el <strong>contenido principal</strong>.</li>
+            <li><code>&lt;section&gt;</code>: agrupa contenido de un <strong>tema</strong>.</li>
+            <li><code>&lt;article&gt;</code>: contiene contenido <strong>independiente</strong>.</li>
+            <li><code>&lt;footer&gt;</code>: <strong>pie de página</strong> o sección.</li>
+            <li><code>&lt;div&gt;</code>: agrupa contenido <em>sin significado especial</em>.</li>
+            <li><code>&lt;span&gt;</code>: agrupa texto <strong>en línea</strong>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>id</code>: <strong>identifica</strong> una sección. Ejemplo: <code>&lt;section id="contacto"&gt;</code>.</li>
+            <li><code>class</code>: permite aplicar <strong>estilos</strong>. Ejemplo: <code>&lt;div class="tarjeta"&gt;</code>.</li>
+            <li><code>style</code>: aplica un estilo <strong>directamente</strong>. Ejemplo: <code>&lt;p style="color: blue;"&gt;</code>.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p><code>&lt;main&gt;</code> puede contener <code>&lt;section&gt;</code> y <code>&lt;article&gt;</code>. El <strong>encabezado</strong> y el <strong>pie</strong> suelen estar separados del contenido principal.</p>
+    </section>
+    <hr>
+    <section id="multimedia">
+        <h2>8. Multimedia y otras etiquetas</h2>
+        <h3>Etiquetas</h3>
+        <ul>
+            <li><code>&lt;audio&gt;</code>: añade <strong>audio</strong>.</li>
+            <li><code>&lt;video&gt;</code>: añade <strong>video</strong>.</li>
+            <li><code>&lt;source&gt;</code>: indica el <strong>archivo</strong> de audio o video.</li>
+            <li><code>&lt;details&gt;</code> y <code>&lt;summary&gt;</code>: crean <strong>contenido desplegable</strong> y su <strong>título</strong>.</li>
+            <li><code>&lt;script&gt;</code>: conecta o contiene <strong>JavaScript</strong>.</li>
+            <li><code>&lt;style&gt;</code>: contiene reglas <strong>CSS</strong>.</li>
+        </ul>
+        <h3>Atributos importantes</h3>
+        <ul>
+            <li><code>controls</code>: muestra <strong>controles</strong> de audio o video.</li>
+            <li><code>src</code>: indica el <strong>archivo multimedia</strong>.</li>
+            <li><code>type</code>: indica el <strong>tipo de archivo</strong>.</li>
+            <li><code>open</code>: muestra un <code>&lt;details&gt;</code> <strong>abierto</strong> inicialmente.</li>
+        </ul>
+        <h3>Cómo se conectan y ejemplo</h3>
+        <p><code>&lt;source&gt;</code> puede ir dentro de <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>. <code>&lt;summary&gt;</code> va dentro de <code>&lt;details&gt;</code>.</p>
+    </section>
+    <hr>
+    <section id="comentarios">
+        <h2>9. Comentarios finales</h2>
+        <p>Los comentarios sirven para dejar <strong>notas</strong> en el código; <em>no aparecen</em> como texto normal en la página, se abre y cierra asi &lt;!-- --&gt;.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML"
+        target="_blank">
+            Aprender más sobre HTML
+        </a>
+        <!-- Decisión: use section para separar los temas y le agrege id para poder navegar por la pagina con nav. -->
+        <!-- Atributo: usae figure para agrupar la imagen con figcaption que describir la imagen. -->
+        <!-- Mejora: añadi un enlace externo que fuera mas parecido al tema de la explicacion de este tema. -->
+        <p><a href="index.html">Volver al inicio</a></p>
+    </section>
+</body>
+</html>
